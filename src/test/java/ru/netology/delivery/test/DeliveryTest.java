@@ -17,6 +17,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 class DeliveryTest {
+
     @BeforeAll
     static void setupAll(){
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -28,8 +29,7 @@ class DeliveryTest {
     }
 
     @BeforeEach
-    void setup() {
-        open("http://localhost:9999");
+    void setup() {open("http://localhost:9999");
     }
 
     @Test
